@@ -63,6 +63,13 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 10;
   border-radius: 10px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 600px;
+    height: 600px;
+   }
+  @media (min-width: 375px) and (max-width: 767px) {
+    width: 320px;
+  }
 `
 
 const ModalImg = styled.img`
@@ -70,6 +77,12 @@ const ModalImg = styled.img`
   height: 97.8%;
   border-radius: 10px 0 0 10px;
   background: #000;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+   }
+   @media (min-width: 375px) and (max-width: 767px) {
+    display: none;
+   }
 `
 const ModalContent = styled.div`
   display:flex;
@@ -83,6 +96,17 @@ const ModalContent = styled.div`
     background: #141414;
     color: #fff;
     border: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    align-items: center;
+    justify-content:center;
+    margin-left: 40%;
+   }
+  @media (min-width: 375px) and (max-width: 767px) {
+    line-height: 1;
+    margin-left: 5%;
+    align-items: space-evenly;
   }
 `
 const CloseModalButton = styled(MdClose)`

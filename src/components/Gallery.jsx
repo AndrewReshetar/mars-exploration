@@ -30,6 +30,10 @@ const GalleryStyle = styled.div`
   width: 100vw;
   background-color: transparent;
   z-index: -3;
+  @media (min-width: 768px) and (max-width: 1024px) {
+     position: absolute;
+     top: 150px;
+   }
 `
 
 const ImageList = styled.div`
@@ -44,6 +48,11 @@ const ImageList = styled.div`
   img{
     width: 250px;
     grid-row-end: span 2;
+  }
+  @media (min-width: 375px) and (max-width: 767px) {
+    img{
+      margin-left: 40px;
+    }
   }
 `
 

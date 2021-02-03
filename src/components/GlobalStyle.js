@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
+    overflow-y: scroll;
   }
 
   main{
@@ -53,6 +54,27 @@ const GlobalStyle = createGlobalStyle`
      &:hover{
       background-color: #3abeb2;
      }
+   }
+
+
+   //table
+   @media (min-width: 768px) and (max-width: 1024px) {
+     main h1{
+      padding-left: 5%;
+      font-size: 4.2rem;
+      margin-top: -80%;
+     }
+   }
+
+   @media (min-width: 375px) and (max-width: 767px) {
+     main h1{
+      padding-left: 0;
+      font-size: 2.4rem;
+      margin-top: -160%;
+     }
+     button{
+     width: 30vw;
+   }
    }
 `
 

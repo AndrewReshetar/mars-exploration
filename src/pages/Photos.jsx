@@ -44,5 +44,6 @@ const LoadMore = styled.div`
       background-color:#ff4656;
     }
   }
+
 `
 export default Photos

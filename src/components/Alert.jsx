@@ -24,5 +24,30 @@ const AlertStyle = styled.div`
     font-weight: normal;
     opacity: 1;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+     width: 100vw;
+     position: absolute;
+     left: 0;
+     top: 120px;
+     margin: 0 auto;
+
+     h1{
+      padding-top: 15%;
+      font-size:1.4rem;
+     }
+   }
+  @media (min-width: 375px) and (max-width: 767px) {
+     width: 100vw;
+     position: absolute;
+     left: 0;
+     top: 100px;
+     margin: 0 auto;
+
+     h1{
+      padding-top: 15%;
+      padding-left: 2%;
+      font-size:0.75rem;
+     }
+  }
 `
 export default Alert

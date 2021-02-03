@@ -24,5 +24,11 @@ const LoaderSvg = styled.svg`
   position: absolute;
   top:35%;
   left: 43%;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    left: 38%;
+  }
+  @media (min-width: 375px) and (max-width: 767px) {
+    left: 25%;
+  }
 `
 export default Loader;

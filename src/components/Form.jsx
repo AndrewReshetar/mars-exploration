@@ -133,5 +133,20 @@ const FormStyle = styled.form`
       }
     }
   }
+  @media (min-width: 375px) and (max-width: 767px) {
+    width: 300px;
+    height: 80%;
+    ul{
+    list-style-type: none;
+    padding: 0 5px;
+    li{
+      color: #999292;
+      width: 100%;
+      label{
+        padding-left: 0;
+      }
+    }
+    }  
+  }
 `
 export default Form
