@@ -14,9 +14,11 @@ const AlertStyle = styled.div`
   min-height: 70vh;
   background-color: rgba(0,0,0,0.9);
   display: block;
+  margin-top: -90%;
   h1{
     font-weight: bold;
     padding-top: 15%;
+    padding-left: 7%;
     margin-top: 0;
     font-size:2.4rem;
     overflow: visible;
